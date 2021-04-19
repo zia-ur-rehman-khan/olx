@@ -1,0 +1,28 @@
+.carousel-first {
+    // width: 300px !important;
+    height: 300px !important ;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  .carousel {
+    // background-color:greenyellow;
+    width: 300px !important;
+    height: 300px !important;
+    .carousel-item, .carousel-inner {
+      height: 100%;
+    }
+    img {
+      height: 100% !important;
+      // object-fit: cover;
+    }
+    // overflow: hidden !important;
+  }
+}
+
+.text{
+    // border: 2px solid black;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}

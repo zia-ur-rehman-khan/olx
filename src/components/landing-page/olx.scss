@@ -1,0 +1,49 @@
+.body {
+  .navbarsss {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    height: 70px;
+    // background-color: lightgray;
+    background-image: linear-gradient(to right, lightblue, blue, lightblue);
+    .img {
+      width: 80px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+    }
+    .searchbar {
+      font-size: 25px;
+      color: white;
+    }
+    input {
+      font-size: 20px;
+    }
+    .button {
+      display: inline-flex;
+      button {
+        border: 1px solid black;
+        border-radius: 20px;
+        width: 100px;    
+        height: 40px;
+        font-size: larger;
+        cursor: pointer;
+      }
+    }
+    .button2{
+        button{
+            border: 1px solid black;
+        border-radius: 20px;
+        // width: 100px;    
+        height: 40px;
+        font-size: larger;
+        cursor: pointer;
+        }
+    }
+  }
+
+  
+}

@@ -1,0 +1,52 @@
+.name-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-bottom: 30px;
+    background-image: linear-gradient(to right, lightblue, blue, lightblue);
+    
+    button{
+        border: 1px solid black;
+        border-radius: 20px;
+        height: 70px;
+        font-size: larger;
+        cursor: pointer;
+        
+}
+.toast-user{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .col-6{
+        display: flex;
+        justify-content: flex-end;
+        max-width: 100%;
+    }
+    .notification{
+        max-width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }   
+}
+.counter{
+    width: 20px;
+    height: 20px;
+    margin-top: -5px;
+    margin-right: -15px;
+    // margin-bottom: -15px;
+    border: 1px solid red;
+    border-radius: 100px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 13px;
+    position: relative;
+}
+}
