@@ -27,7 +27,7 @@ let buy = () => {
     // let id = userpost[0][0];
     // userpost = new Map(userpost);
     // userpost = Object.fromEntries(userpost);
-    // console.log (userpost,"user add with buy property")
+    // console.log (userpost,"user add with buy property") /
     // console.log(tempItem,"all items")
 
     firebase

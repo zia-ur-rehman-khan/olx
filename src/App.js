@@ -27,15 +27,16 @@ let App = () => {
         });
         firebase
           .database()
-          .ref("user/" + userlength.uid)
+          .ref("user/" + user.uid)
           .on("value", (snapshot) => {
             const data = snapshot.val() ? snapshot.val() : [];
             dispatch({
               type: "username",
               payload: data?.username,
+              
             });
+            // console.log(data?.username,"username hai kiya")
           });
-
         firebase
           .database()
           .ref("productsdetailed/")

@@ -8,6 +8,7 @@ import { useState } from "react";
 
 import back from "../../assets/images/back.png";
 import { Link, useHistory } from "react-router-dom";
+import { computeHeadingLevel } from "@testing-library/dom";
 // import { Spinner } from "react-bootstrap";
 
 let Productsdetailed = () => {
@@ -30,7 +31,7 @@ let Productsdetailed = () => {
       by: user?.userName,
       userID: user?.uid,
     };
-    // console.log(user.uid,"IDIDIDIDIDIID   ")
+    console.log(user,"useruseruseer")
     if (!user || photos.length !== 5) {
       alert("at least 5 images");
     } else {
@@ -47,6 +48,7 @@ let Productsdetailed = () => {
             temp.push(url);
             if (temp.length === photos.length) {
               productsdetailes.productImage = temp;
+              // console.log(productsdetailes,"hello bhai theak hai phar lena")
               firebase
                 .database()
                 .ref("productsdetailed/" + Date.now())

@@ -31,11 +31,18 @@ let Userdeatailes = () => {
       });
   };
   let count = Object.values(productsdetailed)?.length
-    ? Object.values(productsdetailed)?.reduce(
-        (total, current) => (total += current?.buy?.count),
+              
+  ? Object.values(productsdetailed)
+  ?.filter(
+                (item) =>
+                  item?.userID === userlength?.uid && item?.buy?.read
+              )
+    ?.reduce(
+        (total, current) => (total += current?.buy?.count || 0),
         0
       )
     : 0;
+    console.log(count,"count batao bhau")
   return (
     <>
       <div className="name-button">
@@ -47,7 +54,7 @@ let Userdeatailes = () => {
             {Object.entries(productsdetailed)
               ?.filter(
                 (item) =>
-                  item[1]?.userID === userlength?.uid && item[1].buy.read
+                  item[1]?.userID === userlength?.uid && item[1]?.buy?.read
               )
               ?.map((item, index) => (
                 <>
